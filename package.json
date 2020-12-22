@@ -6,6 +6,11 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "node": "^15.4.0",
+    "nodemon": "^2.0.6",
+    "pg": "^8.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -13,8 +18,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/server.js",
     "build": "react-scripts build",
+    "server": "nodemon --watch server server/server.js",
+    "client": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
